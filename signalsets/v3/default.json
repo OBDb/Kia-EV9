@@ -1,4 +1,5 @@
-{ "commands": [
+{ "diagnosticLevel": "03",
+  "commands": [
 { "hdr": "744", "rax": "7AE", "cmd": {"22": "E003"}, "freq": 1,
   "signals": [
     {"id": "EV9_HVBAT_VOLT", "path": "Battery", "fmt": {"bix": 104, "len": 16, "max": 1000, "div": 10, "unit": "volts"   }, "name": "HV battery voltage"},
