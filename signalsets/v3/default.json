@@ -22,8 +22,8 @@
 { "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25,
   "signals": [
     {"id": "EV9_VSS", "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"},
-    {"id": "EV9_TEMP_INT", "path": "Climate", "fmt": {"bix": 40, "len": 8, "min": -50, "max": 50, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior Temperature"},
-    {"id": "EV9_TEMP_EXT", "path": "Climate", "fmt": {"bix": 48, "len": 8, "min": -50, "max": 50, "div": 2, "add": -40, "unit": "celsius" }, "name": "Exterior Temperature"}
+    {"id": "EV9_TEMP_INT", "path": "Climate", "fmt": {"bix": 40, "len": 8, "min": -40, "max": 80, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior Temperature"},
+    {"id": "EV9_TEMP_EXT", "path": "Climate", "fmt": {"bix": 48, "len": 8, "min": -40, "max": 80, "div": 2, "add": -40, "unit": "celsius" }, "name": "Exterior Temperature"}
   ]},
 { "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5,
   "signals": [
