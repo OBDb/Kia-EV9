@@ -30,7 +30,8 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1,
   "signals": [
-    {"id": "EV9_HVBAT_SOC", "path": "Battery", "fmt": {"bix": 32, "len": 8, "max": 100, "mul": 0.5, "unit": "percent" }, "name": "HV battery charge (dash)", "suggestedMetric": "stateOfCharge"}
+    {"id": "EV9_HVBAT_SOC", "path": "Battery", "fmt": {"bix": 32, "len": 8, "max": 100, "mul": 0.5, "unit": "percent" }, "name": "HV battery charge (dash)", "suggestedMetric": "stateOfCharge"},
+    {"id": "EV9_LVBAT_VOLT", "path": "Battery", "fmt": {"bix": 72, "len": 8, "max": 100, "mul": 0.1, "unit": "volts" }, "name": "Aux battery voltage"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1,
   "signals": [
