@@ -158,14 +158,14 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0105"}, "freq": 1,
   "signals": [
-    {"id": "EV9_HVBAT_C_DEV_V",     "path": "Battery",             "fmt": {"bix": 160, "len": 8,  "max": 5.1,              "div": 50,                               "unit": "volts"   }, "name": "HV cell deviation (voltage)"},
-    {"id": "EV9_HVBAT_HTR1_T",      "path": "Battery",             "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 1 temperature"},
-    {"id": "EV9_HVBAT_HTR2_T",      "path": "Battery",             "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 2 temperature"},
-    {"id": "EV9_HVBAT_SOH",         "path": "Battery",             "fmt": {"bix": 200, "len": 16, "max": 100,              "div": 10,                               "unit": "percent" }, "name": "HV battery state of health",         "suggestedMetric": "stateOfHealth"},
-    {"id": "EV9_HVBAT_DET_MAX_ID",  "path": "Battery",             "fmt": {"bix": 216, "len": 8,  "max": 98,                                        "nullmax": 200, "unit": "scalar"  }, "name": "HV battery max deteriation cell id"},
-    {"id": "EV9_HVBAT_DET_MIN",     "path": "Battery",             "fmt": {"bix": 224, "len": 16, "max": 100,              "div": 10,                               "unit": "percent" }, "name": "HV battery min deteriation"},
-    {"id": "EV9_HVBAT_DET_MIN_ID",  "path": "Battery",             "fmt": {"bix": 240, "len": 8,  "max": 98,                                        "nullmax": 200, "unit": "scalar"  }, "name": "HV battery min deteriation cell id"},
-    {"id": "EV9_HVBAT_SOC_DISP",    "path": "Battery",             "fmt": {"bix": 248, "len": 8,  "max": 100,              "div": 2,                                "unit": "percent" }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"},
+    {"id": "EV9_HVBAT_C_DEV_V",    "path": "Battery", "fmt": {"bix": 160, "len": 8,  "max": 5.1,              "div": 50,                               "unit": "volts"   }, "name": "HV cell deviation (voltage)"},
+    {"id": "EV9_HVBAT_HTR1_T",     "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 1 temperature"},
+    {"id": "EV9_HVBAT_HTR2_T",     "path": "Battery", "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 2 temperature"},
+    {"id": "EV9_HVBAT_SOH",        "path": "Battery", "fmt": {"bix": 200, "len": 16, "max": 100,              "div": 10,                               "unit": "percent" }, "name": "HV battery state of health",         "suggestedMetric": "stateOfHealth"},
+    {"id": "EV9_HVBAT_DET_MAX_ID", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 98,                                        "nullmax": 200, "unit": "scalar"  }, "name": "HV battery max deteriation cell id"},
+    {"id": "EV9_HVBAT_DET_MIN",    "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 100,              "div": 10,                               "unit": "percent" }, "name": "HV battery min deteriation"},
+    {"id": "EV9_HVBAT_DET_MIN_ID", "path": "Battery", "fmt": {"bix": 240, "len": 8,  "max": 98,                                        "nullmax": 200, "unit": "scalar"  }, "name": "HV battery min deteriation cell id"},
+    {"id": "EV9_HVBAT_SOC_DISP",   "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 100,              "div": 2,                                "unit": "percent" }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "010A"}, "freq": 1,
   "signals": [
