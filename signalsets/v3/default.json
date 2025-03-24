@@ -166,7 +166,7 @@
     {"id": "EV9_HVBAT_CMU095_VOLT", "path": "Battery.Modules.095", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 095 voltage"},
     {"id": "EV9_HVBAT_CMU096_VOLT", "path": "Battery.Modules.096", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 096 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0105"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1,
   "signals": [
     {"id": "EV9_HVBAT_C_DEV_V",    "path": "Battery", "fmt": {"bix": 160, "len": 8,  "max": 5.1,              "div": 50,                               "unit": "volts"   }, "name": "HV cell deviation (voltage)"},
     {"id": "EV9_HVBAT_HTR1_T",     "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 1 temperature"},
