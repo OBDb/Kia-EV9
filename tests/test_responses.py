@@ -25,9 +25,13 @@ TEST_CASES = [
 7A825FFFFAAAAAAAAAA
 """, {
     "EV9_TP_FL": 0,
+    "EV9_TT_FL": -50,
     "EV9_TP_FR": 0,
+    "EV9_TT_FR": -50,
     "EV9_TP_RL": 0,
+    "EV9_TT_RL": -50,
     "EV9_TP_RR": 0,
+    "EV9_TT_RR": -50,
     }),
             ("""
 7A8102462C00BFFFFFF
@@ -38,9 +42,13 @@ TEST_CASES = [
 7A825A6B7AAAAAAAAAA
 """, {
     "EV9_TP_FL": 38,
+    "EV9_TT_FL": 10,
     "EV9_TP_FR": 37.8,
+    "EV9_TT_FR": 10,
     "EV9_TP_RL": 38.6,
+    "EV9_TT_RL": 10,
     "EV9_TP_RR": 38.6,
+    "EV9_TT_RR": 12,
     }),
             ("""
 7A8102462C00BFFFFFF
@@ -51,9 +59,13 @@ TEST_CASES = [
 7A82593B8AAAAAAAAAA
 """, {
     "EV9_TP_FL": 42.4,
+    "EV9_TT_FL": 29,
     "EV9_TP_FR": 42,
+    "EV9_TT_FR": 29,
     "EV9_TP_RL": 42.8,
+    "EV9_TT_RL": 31,
     "EV9_TP_RR": 42,
+    "EV9_TT_RR": 30,
     }),
         ]
     },
