@@ -61,7 +61,7 @@
     {"id": "EV9_HVBAT_CHRG_TOT_E", "path": "Battery", "fmt": {"bix": 304, "len": 32, "max": 429496729,              "div": 10,               "unit": "kilowattHours" }, "name": "Total charge (energy)"},
     {"id": "EV9_HVBAT_DSCH_TOT_E", "path": "Battery", "fmt": {"bix": 336, "len": 32, "max": 429496729,              "div": 10,               "unit": "kilowattHours" }, "name": "Total discharge (energy)"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0102"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1,
   "signals": [
     {"id": "EV9_HVBAT_CMU001_VOLT", "path": "Battery.Modules.001", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 001 voltage"},
     {"id": "EV9_HVBAT_CMU002_VOLT", "path": "Battery.Modules.002", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 002 voltage"},
@@ -96,7 +96,7 @@
     {"id": "EV9_HVBAT_CMU031_VOLT", "path": "Battery.Modules.031", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 031 voltage"},
     {"id": "EV9_HVBAT_CMU032_VOLT", "path": "Battery.Modules.032", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 032 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0103"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0103"}, "freq": 1,
   "signals": [
     {"id": "EV9_HVBAT_CMU033_VOLT", "path": "Battery.Modules.033", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 033 voltage"},
     {"id": "EV9_HVBAT_CMU034_VOLT", "path": "Battery.Modules.034", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 034 voltage"},
@@ -131,7 +131,7 @@
     {"id": "EV9_HVBAT_CMU063_VOLT", "path": "Battery.Modules.063", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 063 voltage"},
     {"id": "EV9_HVBAT_CMU064_VOLT", "path": "Battery.Modules.064", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 064 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0104"}, "freq": 1,
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0104"}, "freq": 1,
   "signals": [
     {"id": "EV9_HVBAT_CMU065_VOLT", "path": "Battery.Modules.065", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 065 voltage"},
     {"id": "EV9_HVBAT_CMU066_VOLT", "path": "Battery.Modules.066", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 066 voltage"},
