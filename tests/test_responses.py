@@ -12,17 +12,49 @@ from schemas.python.signals_testing import obd_testrunner_by_year
 REPO_ROOT = Path(__file__).parent.parent.absolute()
 
 TEST_CASES = [
-    # TODO: Implement real tests below with vehicle data.
     {
-        "model_year": 2019,
+        "model_year": 2024,
         "tests": [
-            # # Tire pressures
-            # ("72E05622813028C", {"F150_TP_FL": 32.6}),
-            # ("72E056228140273", {"F150_TP_FR": 31.35}),
-            # ("72E056228150291", {"F150_TP_RRO": 32.85}),
-            # ("72E05622816026E", {"F150_TP_RLO": 31.1}),
-            # ("72E056228170000", {"F150_TP_RRI": 0.0}),
-            # ("72E056228180000", {"F150_TP_RLI": 0.0}),
+            # Tire pressures
+            ("""
+7A8102462C00BFFFFFF
+7A821F8000000000200
+7A82200000002000000
+7A82300020000000002
+7A8243BFFFFFFFFFFFF
+7A825FFFFAAAAAAAAAA
+""", {
+    "EV9_TP_FL": 0,
+    "EV9_TP_FR": 0,
+    "EV9_TP_RL": 0,
+    "EV9_TP_RR": 0,
+    }),
+            ("""
+7A8102462C00BFFFFFF
+7A821F8BE3C000400BD
+7A8223C000400C13C00
+7A8230400C13E000400
+7A8243BA4B7A4B7A4B7
+7A825A6B7AAAAAAAAAA
+""", {
+    "EV9_TP_FL": 38,
+    "EV9_TP_FR": 37.8,
+    "EV9_TP_RL": 38.6,
+    "EV9_TP_RR": 38.6,
+    }),
+            ("""
+7A8102462C00BFFFFFF
+7A821F8D44F000600D2
+7A8224F000600D65100
+7A8230600D250000600
+7A8243E93B893B893B8
+7A82593B8AAAAAAAAAA
+""", {
+    "EV9_TP_FL": 42.4,
+    "EV9_TP_FR": 42,
+    "EV9_TP_RL": 42.8,
+    "EV9_TP_RR": 42,
+    }),
         ]
     },
 ]
