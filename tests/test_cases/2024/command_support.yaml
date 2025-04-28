@@ -39,3 +39,8 @@ supported_commands_by_ecu:
   - 0142:VPWR
   7E7:
   - 0142:VPWR
+unsupported_commands_by_ecu:
+  7E2:
+  - 7E2.7EA.2101
+  7E4:
+  - 7E4.7EC.22010C
