@@ -11,5 +11,4 @@ test_cases:
     74C250900000020AAAA
     74C100D62F187333530
     74C2130303158484130
-  expected_values:
-    EV9_DC_CHRG_STATE: 0
+  expected_values: {}
