@@ -1,0 +1,12 @@
+command_id: 7E0.7EC.22010C
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    7EC102762010C000000
+    7EC2100009000000001
+    7EC2200000000010000
+    7EC2300000000000000
+    7EC2400000000000000
+    7EC250003000000AAAA
+  expected_values: {}
