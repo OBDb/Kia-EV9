@@ -1,93 +1,93 @@
 command_id: 7C6.7CE.22B002|fc=1
 test_cases:
-- response: |-
+- expected_values:
+    EV9_ODO_KM: 0
+    EV9_ODO_MI: 0
+  response: |-
     7CE101462B002400000
     7CE210000B400000000
     7CE2200000000000000
-  expected_values:
+- expected_values:
     EV9_ODO_KM: 0
-    EV9_ODO_MI: 0
-- response: |-
+    EV9_ODO_MI: 6191
+  response: |-
     7CE101462B002D00000
     7CE2100FF9300000000
     7CE22182F0000000000
-  expected_values:
+- expected_values:
     EV9_ODO_KM: 0
-    EV9_ODO_MI: 6191
-- response: |-
+    EV9_ODO_MI: 6382
+  response: |-
     7CE101462B002D00000
     7CE2100FF9D00000000
     7CE2218EE0000000000
-  expected_values:
+- expected_values:
     EV9_ODO_KM: 0
-    EV9_ODO_MI: 6382
-- response: |-
+    EV9_ODO_MI: 6365
+  response: |-
     7CE101462B002D00000
     7CE2100FF9F00000000
     7CE2218DD0000000000
-  expected_values:
+- expected_values:
     EV9_ODO_KM: 0
-    EV9_ODO_MI: 6365
-- response: |-
+    EV9_ODO_MI: 6191
+  response: |-
     7CE101462B002D00000
     7CE2100FFA000000000
     7CE22182F0000000000
-  expected_values:
+- expected_values:
     EV9_ODO_KM: 0
-    EV9_ODO_MI: 6191
-- response: |-
+    EV9_ODO_MI: 6207
+  response: |-
     7CE101462B002D00000
     7CE2100FFB000000000
     7CE22183F0000000000
-  expected_values:
-    EV9_ODO_KM: 0
-    EV9_ODO_MI: 6207
-- response: |-
+- expected_values:
+    EV9_ODO_KM: 30066
+    EV9_ODO_MI: 0
+  response: |-
     7CE101462B002E00000
     7CE2100FF9600757200
     7CE2200000000000000
-  expected_values:
-    EV9_ODO_KM: 30066
+- expected_values:
+    EV9_ODO_KM: 30143
     EV9_ODO_MI: 0
-- response: |-
+  response: |-
     7CE101462B002E00000
     7CE2100FF970075BF00
     7CE2200000000000000
-  expected_values:
-    EV9_ODO_KM: 30143
+- expected_values:
+    EV9_ODO_KM: 11330
     EV9_ODO_MI: 0
-- response: |-
+  response: |-
     7CE101462B002EC0000
     7CE2100FF96002C4200
     7CE2200000021990000
-  expected_values:
-    EV9_ODO_KM: 11330
+- expected_values:
+    EV9_ODO_KM: 11290
     EV9_ODO_MI: 0
-- response: |-
+  response: |-
     7CE101462B002EC0000
     7CE2100FF97002C1A00
     7CE22000003FE9A0000
-  expected_values:
-    EV9_ODO_KM: 11290
+- expected_values:
+    EV9_ODO_KM: 11320
     EV9_ODO_MI: 0
-- response: |-
+  response: |-
     7CE101462B002EC0000
     7CE2100FFB5002C3800
     7CE22000000FFB70000
-  expected_values:
-    EV9_ODO_KM: 11320
+- expected_values:
+    EV9_ODO_KM: 11622
     EV9_ODO_MI: 0
-- response: |-
+  response: |-
     7CE101462B002EC0000
     7CE2100FFB5002D6600
     7CE2200000077B70000
-  expected_values:
-    EV9_ODO_KM: 11622
+- expected_values:
+    EV9_ODO_KM: 11477
     EV9_ODO_MI: 0
-- response: |-
+  response: |-
     7CE101462B002EC0000
     7CE2100FFB6002CD500
     7CE220000001BB80000
-  expected_values:
-    EV9_ODO_KM: 11477
-    EV9_ODO_MI: 0
