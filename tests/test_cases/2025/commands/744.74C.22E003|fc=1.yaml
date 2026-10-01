@@ -3,7 +3,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 66
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -21,7 +20,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 68
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -39,7 +37,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -57,7 +54,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -75,7 +71,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -93,7 +88,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -111,7 +105,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -129,7 +122,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -147,7 +139,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -165,7 +156,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -183,7 +173,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 61.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -201,7 +190,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 56.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -219,7 +207,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 57
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -237,7 +224,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 66
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -255,7 +241,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 69
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -273,7 +258,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 59.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -291,7 +275,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 76
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -309,7 +292,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 78.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -327,7 +309,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 91.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -345,7 +326,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 97.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -363,7 +343,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 71.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -381,7 +360,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 88.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -399,7 +377,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 100
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -417,7 +394,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 62
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -435,7 +411,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 85
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -453,7 +428,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 83
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -471,7 +445,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 90
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -489,7 +462,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 59
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -507,7 +479,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 69
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -525,7 +496,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 3
     EV9_HVBAT_CHRG_CNT: 26
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 83.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -543,7 +513,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 4
     EV9_HVBAT_CHRG_CNT: 16
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 68.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -561,7 +530,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 64.5
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0
@@ -579,7 +547,6 @@ test_cases:
 - expected_values:
     EV9_DC_CHRG_TIME: 2
     EV9_HVBAT_CHRG_CNT: 5
-    EV9_HVBAT_DC_CHRGNG: 0
     EV9_HVBAT_SOC_VCMS: 0
     EV9_HVBAT_TARGET_CURR: 0
     EV9_HVBAT_TARGET_VOLT: 0

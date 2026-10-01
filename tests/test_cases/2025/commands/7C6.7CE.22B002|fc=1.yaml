@@ -1,7 +1,6 @@
 command_id: 7C6.7CE.22B002|fc=1
 test_cases:
 - expected_values:
-    EV9_ODO_KM: 0
     EV9_ODO_MI: 754
   response: |-
     7CE101862B002DC0000
@@ -9,7 +8,6 @@ test_cases:
     7CE2202F20004980000
     7CE2300000000AAAAAA
 - expected_values:
-    EV9_ODO_KM: 0
     EV9_ODO_MI: 754
   response: |-
     7CE101862B002DC0000
@@ -17,7 +15,6 @@ test_cases:
     7CE2202F200069B0000
     7CE2300000000AAAAAA
 - expected_values:
-    EV9_ODO_KM: 0
     EV9_ODO_MI: 752
   response: |-
     7CE101862B002DC0000
@@ -25,7 +22,6 @@ test_cases:
     7CE2202F00008B40000
     7CE2300000000AAAAAA
 - expected_values:
-    EV9_ODO_KM: 0
     EV9_ODO_MI: 753
   response: |-
     7CE101862B002DC0000
@@ -33,7 +29,6 @@ test_cases:
     7CE2202F10011B50000
     7CE2300000000AAAAAA
 - expected_values:
-    EV9_ODO_KM: 0
     EV9_ODO_MI: 754
   response: |-
     7CE101862B002DC0000
@@ -41,7 +36,6 @@ test_cases:
     7CE2202F20002B50000
     7CE2300000000AAAAAA
 - expected_values:
-    EV9_ODO_KM: 0
     EV9_ODO_MI: 754
   response: |-
     7CE101862B002DC0000
