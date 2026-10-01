@@ -35,6 +35,38 @@ test_cases:
     7A8243693B893B893B8
     7A82593B8AAAAAAAAAA
 - expected_values:
+    EV9_TP_FL: null
+    EV9_TP_FR: null
+    EV9_TP_RL: null
+    EV9_TP_RR: null
+    EV9_TT_FL: null
+    EV9_TT_FR: null
+    EV9_TT_RL: null
+    EV9_TT_RR: null
+  response: |-
+    7A8102462C00BFFFFFF
+    7A821F8000000000200
+    7A82200000002000000
+    7A82300020000000002
+    7A82428FFFFFFFFFFFF
+    7A825FFFFAAAAAAAAAA
+- expected_values:
+    EV9_TP_FL: null
+    EV9_TP_FR: null
+    EV9_TP_RL: null
+    EV9_TP_RR: null
+    EV9_TT_FL: null
+    EV9_TT_FR: null
+    EV9_TT_RL: null
+    EV9_TT_RR: null
+  response: |-
+    7A8102462C00BFFFFFF
+    7A821F8000000000200
+    7A82200000002000000
+    7A82300020000000002
+    7A824FFFFFFFFFFFFFF
+    7A825FFFFAAAAAAAAAA
+- expected_values:
     EV9_TP_RR: 35
     EV9_TT_RR: 12
   response: |-

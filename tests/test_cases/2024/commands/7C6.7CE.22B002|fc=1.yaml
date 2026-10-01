@@ -1,6 +1,13 @@
 command_id: 7C6.7CE.22B002|fc=1
 test_cases:
 - expected_values:
+    EV9_ODO_KM: null
+    EV9_ODO_MI: null
+  response: |-
+    7CE101462B002400000
+    7CE210000B400000000
+    7CE2200000000000000
+- expected_values:
     EV9_ODO_MI: 6191
   response: |-
     7CE101462B002D00000
