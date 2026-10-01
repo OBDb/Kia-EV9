@@ -1,6 +1,22 @@
 command_id: 7A0.7A8.22C00B|fc=1
 test_cases:
 - expected_values:
+    EV9_TP_FL: null
+    EV9_TP_FR: null
+    EV9_TP_RL: null
+    EV9_TP_RR: null
+    EV9_TT_FL: null
+    EV9_TT_FR: null
+    EV9_TT_RL: null
+    EV9_TT_RR: null
+  response: |-
+    7A8102462C00BFFFFFF
+    7A821F8000000000200
+    7A82200000002000000
+    7A82300020000000002
+    7A8243AFFFFFFFFFFFF
+    7A825FFFFAAAAAAAAAA
+- expected_values:
     EV9_TP_RR: 40
     EV9_TT_RR: 23
   response: |-
