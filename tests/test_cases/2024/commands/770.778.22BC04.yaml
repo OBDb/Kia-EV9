@@ -1,0 +1,12 @@
+command_id: 770.778.22BC04
+test_cases:
+- expected_values:
+    EV9_BELT_RL: 0
+    EV9_BELT_RM: 0
+    EV9_BELT_RR: 1
+    EV9_GEAR_R_2: 0
+    EV9_LOCK_FL: 0
+    EV9_LOCK_FR: 0
+  response: |-
+    778100B62BC04BDFEBF
+    7782178807F0200AAAA

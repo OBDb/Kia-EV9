@@ -1,67 +1,193 @@
 { "commands": [
+{ "hdr": "730", "rax": "738", "cmd": {"22": "F010"}, "freq": 0.25, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_WHEEL_FR_VSS_HD",           "path": "Movement",    "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Front right wheel speed, high resolution"},
+    {"id": "EV9_WHEEL_FL_VSS_HD",           "path": "Movement",    "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Front left wheel speed, high resolution"},
+    {"id": "EV9_WHEEL_RR_VSS_HD",           "path": "Movement",    "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Rear right wheel speed, high resolution"},
+    {"id": "EV9_WHEEL_RL_VSS_HD",           "path": "Movement",    "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 2047,                                 "div": 32,                                                   "unit": "kilometersPerHour"      },                  "name": "Rear left wheel speed, high resolution"},
+    {"id": "EV9_STEERING_ANGLE",            "path": "Control",     "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 3276.7, "min": -3276.8,               "div": 10,                   "sign": true,                   "unit": "degrees"                },                  "name": "Steering wheel angle"},
+    {"id": "EV9_LATERAL_ACCELERATION",      "path": "Orientation", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 4.177,  "min": -4.177,  "mul": 8.354, "div": 65535, "add": -4.177,                                 "unit": "metersPerSecondSquared" },                  "name": "Lateral acceleration"},
+    {"id": "EV9_LONGITUDINAL_ACCELERATION", "path": "Orientation", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 4.177,  "min": -4.177,  "mul": 8.354, "div": 65535, "add": -4.177,                                 "unit": "metersPerSecondSquared" },                  "name": "Longitudinal acceleration"},
+    {"id": "EV9_YAW_RATE",                  "path": "Orientation", "fmt": {"bix": 144, "len": 8,  "max": 1.275,                                "div": 200,                                              "unit": "degrees" },                               "name": "Yaw rate"}
+  ]},
 { "hdr": "744", "rax": "74C", "fcm1": true, "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "EV9_DC_CHRG_STATE", "path": "Battery", "fmt": {"bix": 140, "len": 1, "max": 1, "unit": "offon" }, "name": "DC charging state"}
   ]},
+{ "hdr": "744", "rax": "74C", "cmd": {"22": "E002"}, "freq": 0.25, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_EVSE_MAXIMUM_VOLTAGE_VALUE",              "path": "Battery.Charging", "fmt": {"bix": 72,  "len": 16, "max": 6553.5,                        "div": 10,               "unit": "volts"         }, "name": "Electric vehicle supply equipment, voltage, max"},
+    {"id": "EV9_EVSE_MAXIMUM_CURRENT_VALUE",              "path": "Battery.Charging", "fmt": {"bix": 88,  "len": 16, "max": 6553.5,                        "div": 10,               "unit": "amps"          }, "name": "Electric vehicle supply equipment, current, max"},
+    {"id": "EV9_EVSE_MINIMUM_VOLTAGE_VALUE",              "path": "Battery.Charging", "fmt": {"bix": 104, "len": 16, "max": 6553.5,                        "div": 10,               "unit": "volts"         }, "name": "Electric vehicle supply equipment, voltage, min"},
+    {"id": "EV9_EVSE_MINIMUM_CURRENT_VALUE",              "path": "Battery.Charging", "fmt": {"bix": 120, "len": 16, "max": 6553.5,                        "div": 10,               "unit": "amps"          }, "name": "Electric vehicle supply equipment, current, min"},
+    {"id": "EV9_EVSE_V",                                  "path": "Battery.Charging", "fmt": {"bix": 136, "len": 16, "max": 6553.5,                        "div": 10,               "unit": "volts"         }, "name": "Electric vehicle supply equipment, voltage"},
+    {"id": "EV9_EVSE_C",                                  "path": "Battery.Charging", "fmt": {"bix": 152, "len": 16, "max": 6553.5,                        "div": 10,               "unit": "amps"          }, "name": "Electric vehicle supply equipment, current"},
+    {"id": "EV9_EVSE_CURRENT_REGULATION_TOLERANCE_VALUE", "path": "Battery.Charging", "fmt": {"bix": 176, "len": 8,  "max": 205,    "min": -50,                         "add": -50, "unit": "amps"          }, "name": "Electric vehicle supply equipment, regulation tolerance"},
+    {"id": "EV9_EVSE_DELIVERED_POWER_VALUE",              "path": "Battery.Charging", "fmt": {"bix": 184, "len": 16, "max": 655.35,             "mul": 10, "div": 1000,             "unit": "kilowattHours" }, "name": "Electric vehicle supply equipment, power, delivered"},
+    {"id": "EV9_EVSE_MAXIMUM_POWER_VALUE",                "path": "Battery.Charging", "fmt": {"bix": 200, "len": 16, "max": 655350,             "mul": 10,                          "unit": "watts"         }, "name": "Electric vehicle supply equipment, power, max"},
+    {"id": "EV9_EVSE_MAIN_POWER",                         "path": "Battery.Charging", "fmt": {"bix": 216, "len": 8,  "max": 255,                                                    "unit": "kilowatts"     }, "name": "Electric vehicle supply equipment, power, main"}
+  ]},
 { "hdr": "744", "rax": "74C", "fcm1": true, "cmd": {"22": "E003"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
   "signals": [
     {"id": "EV9_HVBAT_SOC_VCMS",    "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 100,   "div": 2,  "unit": "percent" }, "name": "HV battery charge",      "suggestedMetric": "stateOfCharge"},
-    {"id": "EV9_HVBAT_TARGET_VOLT", "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 6553,  "div": 10, "unit": "volts"   }, "name": "EVSE target current",    "description": "EVSE = Electric vehicle supply equipment"},
-    {"id": "EV9_HVBAT_DC_CHRGNG",   "path": "Battery", "fmt": {"bix": 140, "len": 1,  "max": 1,                "unit": "offon"   }, "name": "DC charging"},
-    {"id": "EV9_HVBAT_TARGET_CURR", "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 6553,  "div": 10, "unit": "amps"    }, "name": "EVSE target voltage",    "description": "EVSE = Electric vehicle supply equipment"},
+    {"id": "EV9_HVBAT_TARGET_VOLT", "path": "Battery", "fmt": {"bix": 128, "len": 16, "max": 6553,  "div": 10, "unit": "volts"   }, "name": "EVSE target voltage",    "description": "EVSE = Electric vehicle supply equipment"},
+    {"id": "EV9_HVBAT_TARGET_CURR", "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 6553,  "div": 10, "unit": "amps"    }, "name": "EVSE target current",    "description": "EVSE = Electric vehicle supply equipment"},
     {"id": "EV9_HVBAT_CHRG_CNT",    "path": "Battery", "fmt": {"bix": 256, "len": 16, "max": 65535,            "unit": "scalar"  }, "name": "Number of DC charges"},
     {"id": "EV9_DC_CHRG_TIME",      "path": "Battery", "fmt": {"bix": 288, "len": 16, "max": 65535,            "unit": "hours"   }, "name": "Total DC charging time"}
   ]},
-{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "744", "rax": "74C", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
-    {"id": "EV9_TP_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0, "unit": "psi"     }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "EV9_TT_FL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50,               "unit": "celsius" }, "name": "Front left tire temperature"},
-    {"id": "EV9_TP_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0, "unit": "psi"     }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
-    {"id": "EV9_TT_FR", "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 205, "min": -50,           "add": -50,               "unit": "celsius" }, "name": "Front right tire temperature"},
-    {"id": "EV9_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,             "nullmin": 0, "unit": "psi"     }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "EV9_TT_RL", "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 205, "min": -50,           "add": -50,               "unit": "celsius" }, "name": "Rear left tire temperature"},
-    {"id": "EV9_TP_RR", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,             "nullmin": 0, "unit": "psi"     }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
-    {"id": "EV9_TT_RR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 205, "min": -50,           "add": -50,               "unit": "celsius" }, "name": "Rear right tire temperature"}
+    {"id": "EV9_BATTERY_MAIN_RELAY_STATUS", "path": "Battery.Charging", "fmt": {"bix": 37, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "Battery main relay status"},
+    {"id": "EV9_CHARGING_SOCKET_CONNECTED", "path": "Battery.Charging", "fmt": {"bix": 38, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "Charging socket connected"},
+    {"id": "EV9_400V_RELAY_STATUS",         "path": "Battery.Charging", "fmt": {"bix": 42, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "400V relay status"},
+    {"id": "EV9_400V_RELAY_ON_OFF_REQUEST", "path": "Battery.Charging", "fmt": {"bix": 43, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "400V relay on/off request"},
+    {"id": "EV9_DC_INLET_T_1",              "path": "Battery.Charging", "fmt": {"bix": 64, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "DC inlet temperature 1"},
+    {"id": "EV9_DC_INLET_T_2",              "path": "Battery.Charging", "fmt": {"bix": 72, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "DC inlet temperature 2"},
+    {"id": "EV9_AC_INLET_T_1",              "path": "Battery.Charging", "fmt": {"bix": 80, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "AC inlet temperature 1"}
   ]},
-{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC03"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
-    {"id": "EV9_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior Temperature"},
-    {"id": "EV9_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior Temperature"},
-    {"id": "EV9_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
+    {"id": "EV9_TRUNK",     "path": "Doors",   "fmt": {"bix": 32, "len": 1, "max": 1, "unit": "noyes" }, "name": "Trunk open?"},
+    {"id": "EV9_DOOR_FL",   "path": "Doors",   "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front left door open?"},
+    {"id": "EV9_DOOR_FR",   "path": "Doors",   "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes" }, "name": "Front right door open?"},
+    {"id": "EV9_HANDBRAKE", "path": "Control", "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "noyes" }, "name": "Handbrake engaged?"},
+    {"id": "EV9_DOOR_RR",   "path": "Doors",   "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear right door open?"},
+    {"id": "EV9_DOOR_RL",   "path": "Doors",   "fmt": {"bix": 39, "len": 1, "max": 1, "unit": "noyes" }, "name": "Rear left door open?"}
   ]},
-{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC04"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
-    {"id": "EV9_ODO_KM", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 4294967295, "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
-    {"id": "EV9_ODO_MI", "path": "Trips", "fmt": {"bix": 72, "len": 24, "max": 4294967295, "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
+    {"id": "EV9_GEAR_R_2", "path": "Transmission", "fmt": {"bix": 35, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Reverse gear selected"},
+    {"id": "EV9_LOCK_FL",  "path": "Doors",        "fmt": {"bix": 36, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front left door locked?"},
+    {"id": "EV9_LOCK_FR",  "path": "Doors",        "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "scalar" }, "name": "Front right door locked?"},
+    {"id": "EV9_BELT_RM",  "path": "Seatbelts",    "fmt": {"bix": 52, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear middle seatbelt latched?"},
+    {"id": "EV9_BELT_RL",  "path": "Seatbelts",    "fmt": {"bix": 53, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear left seatbelt latched?"},
+    {"id": "EV9_BELT_RR",  "path": "Seatbelts",    "fmt": {"bix": 54, "len": 1, "max": 1, "unit": "noyes"  }, "name": "Rear right seatbelt latched?"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
-    {"id": "EV9_HVBAT_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                    "div": 2,                "unit": "percent"       }, "name": "HV battery charge",                 "suggestedMetric": "stateOfCharge"},
-    {"id": "EV9_HVBAT_CHARGING",   "path": "Battery", "fmt": {"bix": 72,  "len": 1,  "max": 1,                                               "unit": "offon"         }, "name": "HV battery charging",               "suggestedMetric": "isCharging"},
-    {"id": "EV9_HVBAT_PLUG_RAPD",  "path": "Battery", "fmt": {"bix": 73,  "len": 1,  "max": 1,                                               "unit": "offon"         }, "name": "Rapid charge port state",           "suggestedMetric": "pluggedIn"},
-    {"id": "EV9_HVBAT_PLUG_NORM",  "path": "Battery", "fmt": {"bix": 74,  "len": 1,  "max": 1,                                               "unit": "offon"         }, "name": "Normal charge port state",          "suggestedMetric": "pluggedIn"},
-    {"id": "EV9_HVBAT_CURR",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 6553.5,                 "div": 10,               "unit": "amps"          }, "name": "HV battery current"},
-    {"id": "EV9_HVBAT_VDC",        "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 6553.5,                 "div": 10,               "unit": "volts"         }, "name": "HV battery voltage (DC)"},
-    {"id": "EV9_HVBAT_T_MAX",      "path": "Battery", "fmt": {"bix": 112, "len": 8,  "max": 127,       "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (max)"},
-    {"id": "EV9_HVBAT_T_MIN",      "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 127,       "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (min)"},
-    {"id": "EV9_HVBAT_MOD1_T",     "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 127,       "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 1)"},
-    {"id": "EV9_HVBAT_MOD2_T",     "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 127,       "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 2)"},
-    {"id": "EV9_HVBAT_MOD3_T",     "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 127,       "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 3)"},
-    {"id": "EV9_HVBAT_MOD4_T",     "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 127,       "min": -127,            "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 4)"},
-    {"id": "EV9_HVBAT_INLET_T",    "path": "Battery", "fmt": {"bix": 176, "len": 8,  "max": 127,       "min": -127,            "sign": true, "unit": "celsius"       }, "name": "Battery inlet temperature"},
-    {"id": "EV9_C_V_MAX",          "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 5.1,                    "div": 50,               "unit": "volts"         }, "name": "Maximum cell voltage"},
-    {"id": "EV9_C_V_MAX_ID",       "path": "Battery", "fmt": {"bix": 192, "len": 8,  "max": 255,                                             "unit": "scalar"        }, "name": "Maximum cell voltage id",           "description": "The id of the cell with the highest voltage."},
-    {"id": "EV9_C_V_MIN",          "path": "Battery", "fmt": {"bix": 200, "len": 8,  "max": 5.1,                    "div": 50,               "unit": "volts"         }, "name": "Minimum cell voltage"},
-    {"id": "EV9_C_V_MIN_ID",       "path": "Battery", "fmt": {"bix": 208, "len": 8,  "max": 255,                                             "unit": "scalar"        }, "name": "Minimum cell voltage id",           "description": "The id of the cell with the lowest voltage."},
-    {"id": "EV9_HVBAT_FAN_STATUS", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 255,                                             "unit": "scalar"        }, "name": "HV battery fan status"},
-    {"id": "EV9_HVBAT_FAN",        "path": "Battery", "fmt": {"bix": 224, "len": 8,  "max": 255,                                             "unit": "hertz"         }, "name": "HV battery fan"},
-    {"id": "EV9_VPWR",             "path": "Battery", "fmt": {"bix": 232, "len": 8,  "max": 255,                    "div": 10,               "unit": "volts"         }, "name": "Battery auxiliary voltage",         "suggestedMetric": "starterBatteryVoltage"},
-    {"id": "EV9_HVBAT_CHRG_TOT_C", "path": "Battery", "fmt": {"bix": 240, "len": 32, "max": 429496729,              "div": 10,               "unit": "ampereHours"   }, "name": "Total charge (current)"},
-    {"id": "EV9_HVBAT_DSCH_TOT_C", "path": "Battery", "fmt": {"bix": 272, "len": 32, "max": 429496729,              "div": 10,               "unit": "ampereHours"   }, "name": "Total discharge (current)"},
-    {"id": "EV9_HVBAT_CHRG_TOT_E", "path": "Battery", "fmt": {"bix": 304, "len": 32, "max": 429496729,              "div": 10,               "unit": "kilowattHours" }, "name": "Total charge (energy)"},
-    {"id": "EV9_HVBAT_DSCH_TOT_E", "path": "Battery", "fmt": {"bix": 336, "len": 32, "max": 429496729,              "div": 10,               "unit": "kilowattHours" }, "name": "Total discharge (energy)"}
+    {"id": "EV9_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Hazard switch"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_BRAKE_LIGHT", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Brake light"}
+  ]},
+{ "hdr": "770", "rax": "778", "cmd": {"22": "BC08"}, "freq": 2, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_TURN_R", "path": "Lights", "fmt": {"bix": 37, "len": 1, "max": 1, "unit": "offon" }, "name": "Right turn signal on?"},
+    {"id": "EV9_TURN_L", "path": "Lights", "fmt": {"bix": 38, "len": 1, "max": 1, "unit": "offon" }, "name": "Left turn signal on?"}
+  ]},
+{ "hdr": "770", "rax": "778", "fcm1": true, "dbg": true, "cmd": {"22": "BC10"}, "freq": 5,
+  "signals": [
+    {"id": "EV9_LIGHTS_CODE", "path": "Lights", "fmt": {"bix": 32, "len": 4, "max": 15, "unit": "scalar" }, "name": "Exterior lights state code"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "B008"}, "freq": 1,
+  "signals": [
+    {"id": "EV9_BRAKE_SW", "path": "Control", "fmt": {"bix": 51, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "B00C"}, "freq": 5,
+  "signals": [
+    {"id": "EV9_HEATED_WHEEL",     "path": "Climate", "fmt": {"bix": 34, "len": 1, "max": 1, "unit": "offon" }, "name": "Heated steering wheel"},
+    {"id": "EV9_HEATED_WHEEL_ALT", "path": "Climate", "fmt": {"bix": 42, "len": 1, "max": 1, "unit": "offon" }, "name": "Heated steering wheel, alternate bit"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "dbg": true, "cmd": {"22": "C002"}, "freq": 60,
+  "signals": [
+    {"id": "EV9_TID_1", "path": "Tires", "fmt": {"bix": 32,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 1 ID"},
+    {"id": "EV9_TID_2", "path": "Tires", "fmt": {"bix": 64,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 2 ID"},
+    {"id": "EV9_TID_3", "path": "Tires", "fmt": {"bix": 96,  "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 3 ID"},
+    {"id": "EV9_TID_4", "path": "Tires", "fmt": {"bix": 128, "len": 32, "max": 4294967295, "unit": "hex" }, "name": "Tire sensor 4 ID"}
+  ]},
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "to": 2023, "from": 2027 },
+  "signals": [
+    {"id": "EV9_TP_FL", "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "EV9_TT_FL", "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "EV9_TP_FR", "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "EV9_TT_FR", "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "EV9_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "EV9_TT_RL", "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "EV9_TP_RR", "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "EV9_TT_RR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "to": 2023, "from": 2027 },
+  "signals": [
+    {"id": "EV9_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "nullmin": -40, "unit": "celsius"           }, "name": "Interior Temperature"},
+    {"id": "EV9_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "nullmin": -40, "unit": "celsius"           }, "name": "Exterior Temperature"},
+    {"id": "EV9_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0101"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_HVAC_IAT_PASSENGER_VENT",      "path": "Climate", "fmt": {"bix": 64, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger vent"},
+    {"id": "EV9_HVAC_IAT_PASSENGER_LEGS_VENT", "path": "Climate", "fmt": {"bix": 72, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Interior temperature, passenger legs vent"}
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "cmd": {"22": "0102"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_HVAC_COOLANT_T",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"},
+    {"id": "EV9_HVAC_INVERTER_T", "path": "Engine", "fmt": {"bix": 96, "len": 8, "max": 87.5, "min": -40, "div": 2, "add": -40, "unit": "celsius" }, "name": "Inverter temperature"}
+  ]},
+{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2027 },
+  "signals": [
+    {"id": "EV9_ODO_KM", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 4294967295, "nullmin": 0, "unit": "kilometers" }, "name": "Odometer (Metric)",   "suggestedMetric": "odometer"},
+    {"id": "EV9_ODO_MI", "path": "Trips", "fmt": {"bix": 72, "len": 24, "max": 4294967295, "nullmin": 0, "unit": "miles"      }, "name": "Odometer (Imperial)", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 0.25, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_WHEEL_ANGLE_ABS",    "path": "Tires",  "fmt": {"bix": 56, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Wheel turn angle, absolute"},
+    {"id": "EV9_MDPS_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 88, "len": 8,  "max": 127,    "min": -128,               "sign": true, "unit": "amps"    }, "name": "Motor-driven power steering current"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_ACCELERATOR_PEDAL_POSITION", "path": "Control",  "fmt": {"bix": 64, "len": 16, "blsb": true, "max": 100,                             "div": 512,                 "unit": "percent"           }, "name": "Accelerator pedal position"},
+    {"id": "EV9_VSS_HD",                     "path": "Movement", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 511, "min": -512, "mul": 156.25, "div": 10000, "sign": true, "unit": "kilometersPerHour" }, "name": "Vehicle speed, high resolution", "suggestedMetric": "speed"},
+    {"id": "EV9_12V_V",                      "path": "Battery",  "fmt": {"bix": 96, "len": 16, "blsb": true, "max": 32,               "mul": 4.883,  "div": 10000,               "unit": "volts"             }, "name": "Auxiliary battery voltage",      "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E005"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_DISCONNECTOR_STROKE_POSITION",        "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 511,                                 "div": 128,                                                      "unit": "millimeters" },                                             "name": "Disconnector stroke position"},
+    {"id": "EV9_DISCONNECTOR_MEET_POINT",             "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 511,                                 "div": 128,                                                      "unit": "millimeters" },                                             "name": "Disconnector meet point"},
+    {"id": "EV9_DISCONNECTOR_END_POINT",              "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 511,                                 "div": 128,                                                      "unit": "millimeters" },                                             "name": "Disconnector end point"},
+    {"id": "EV9_DISCONNECTOR_DISENGAGE_LAST_TIME",    "path": "Engine", "fmt": {"bix": 80,  "len": 8,  "max": 255,                                                                                         "unit": "milliseconds" },                    "name": "Disconnector disengage last time"},
+    {"id": "EV9_DISCONNECTOR_ACTUATOR_MOTOR_CURRENT", "path": "Engine", "fmt": {"bix": 96,  "len": 8,  "max": 254,   "min": -256,  "mul": 2,                                   "sign": true,               "unit": "amps"         },                    "name": "Disconnector actuator motor current"},
+    {"id": "EV9_DISCONNECTOR_INVERTER_PWM_DUTY",      "path": "Engine", "fmt": {"bix": 104, "len": 16, "blsb": true, "max": 100,                  "mul": 78.125, "div": 10000,               "sign": true,                        "unit": "percent"     },                                             "name": "Disconnector inverter PWM duty"},
+    {"id": "EV9_DISCONNECTOR_ZERO_COUNT_OFFSET",      "path": "Engine", "fmt": {"bix": 120, "len": 16, "blsb": true, "max": 32767, "min": -32768,                                            "sign": true,                        "unit": "scalar"      },                                             "name": "Disconnector zero count offset"}
+  ]},
+{ "hdr": "7E3", "rax": "7EB", "cmd": {"22": "E009"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_EWP_CURRENT_DC",               "path": "Battery", "fmt": {"bix": 56,  "len": 8, "max": 25.5,            "div": 10, "unit": "amps"  }, "name": "Electric water pump, current DC"},
+    {"id": "EV9_EWP_VOLTAGE_DC",               "path": "Battery", "fmt": {"bix": 64,  "len": 8, "max": 25.5,            "div": 10, "unit": "volts" }, "name": "Electric water pump, voltage DC"},
+    {"id": "EV9_EWP_COMMANDED_ROTATION_SPEED", "path": "Battery", "fmt": {"bix": 88,  "len": 8, "max": 6120, "mul": 24,            "unit": "rpm"   }, "name": "Electric water pump, commanded rotation speed"},
+    {"id": "EV9_EWP_ACTUAL_ROTATION_SPEED",    "path": "Battery", "fmt": {"bix": 96,  "len": 8, "max": 6120, "mul": 24,            "unit": "rpm"   }, "name": "Electric water pump, actual rotation speed"},
+    {"id": "EV9_EOP_ACTUAL_SPEED",             "path": "Battery", "fmt": {"bix": 112, "len": 8, "max": 5100, "mul": 20,            "unit": "rpm"   }, "name": "Electric oil pump, actual speed"},
+    {"id": "EV9_EOP_COMMANDED_SPEED",          "path": "Battery", "fmt": {"bix": 152, "len": 8, "max": 5100, "mul": 20,            "unit": "rpm"   }, "name": "Electric oil pump, commanded speed"},
+    {"id": "EV9_EOP_CURRENT_DC",               "path": "Battery", "fmt": {"bix": 176, "len": 8, "max": 255,                        "unit": "amps"  }, "name": "Electric oil pump, current DC"},
+    {"id": "EV9_EOP_CURRENT_IQ",               "path": "Battery", "fmt": {"bix": 184, "len": 8, "max": 255,                        "unit": "amps"  }, "name": "Electric oil pump, current IQ"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0101"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
+  "signals": [
+    {"id": "EV9_HVBAT_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                       "div": 2,                            "unit": "percent"       }, "name": "HV battery charge",                 "suggestedMetric": "stateOfCharge"},
+    {"id": "EV9_HVBAT_CHARGING",   "path": "Battery", "fmt": {"bix": 72,  "len": 1,  "max": 1,                                                              "unit": "offon"         }, "name": "HV battery charging",               "suggestedMetric": "isCharging"},
+    {"id": "EV9_HVBAT_PLUG_RAPD",  "path": "Battery", "fmt": {"bix": 73,  "len": 1,  "max": 1,                                                              "unit": "offon"         }, "name": "Rapid charge port state",           "suggestedMetric": "pluggedIn"},
+    {"id": "EV9_HVBAT_PLUG_NORM",  "path": "Battery", "fmt": {"bix": 74,  "len": 1,  "max": 1,                                                              "unit": "offon"         }, "name": "Normal charge port state",          "suggestedMetric": "pluggedIn"},
+    {"id": "EV9_HVBAT_CURR",       "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 3276.7,    "min": -3276.8, "div": 10,             "sign": true, "unit": "amps"          }, "name": "HV battery current"},
+    {"id": "EV9_HVBAT_VDC",        "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 6553.5,                    "div": 10,                           "unit": "volts"         }, "name": "HV battery voltage (DC)"},
+    {"id": "EV9_HVBAT_T_MAX",      "path": "Battery", "fmt": {"bix": 112, "len": 8,  "max": 127,       "min": -127,                           "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (max)"},
+    {"id": "EV9_HVBAT_T_MIN",      "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 127,       "min": -127,                           "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (min)"},
+    {"id": "EV9_HVBAT_MOD1_T",     "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 127,       "min": -127,                           "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 1)"},
+    {"id": "EV9_HVBAT_MOD2_T",     "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 127,       "min": -127,                           "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 2)"},
+    {"id": "EV9_HVBAT_MOD3_T",     "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 127,       "min": -127,                           "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 3)"},
+    {"id": "EV9_HVBAT_MOD4_T",     "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 127,       "min": -127,                           "sign": true, "unit": "celsius"       }, "name": "HV battery temperature (module 4)"},
+    {"id": "EV9_HVBAT_INLET_T",    "path": "Battery", "fmt": {"bix": 176, "len": 8,  "max": 215,       "min": -40,                "add": -40,               "unit": "celsius"       }, "name": "Battery inlet temperature"},
+    {"id": "EV9_C_V_MAX",          "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 5.1,                       "div": 50,                           "unit": "volts"         }, "name": "Maximum cell voltage"},
+    {"id": "EV9_C_V_MAX_ID",       "path": "Battery", "fmt": {"bix": 192, "len": 8,  "max": 255,                                                            "unit": "scalar"        }, "name": "Maximum cell voltage id",           "description": "The id of the cell with the highest voltage."},
+    {"id": "EV9_C_V_MIN",          "path": "Battery", "fmt": {"bix": 200, "len": 8,  "max": 5.1,                       "div": 50,                           "unit": "volts"         }, "name": "Minimum cell voltage"},
+    {"id": "EV9_C_V_MIN_ID",       "path": "Battery", "fmt": {"bix": 208, "len": 8,  "max": 255,                                                            "unit": "scalar"        }, "name": "Minimum cell voltage id",           "description": "The id of the cell with the lowest voltage."},
+    {"id": "EV9_HVBAT_FAN_STATUS", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 255,                                                            "unit": "scalar"        }, "name": "HV battery fan status"},
+    {"id": "EV9_HVBAT_FAN",        "path": "Battery", "fmt": {"bix": 224, "len": 8,  "max": 255,                                                            "unit": "hertz"         }, "name": "HV battery fan"},
+    {"id": "EV9_VPWR",             "path": "Battery", "fmt": {"bix": 232, "len": 8,  "max": 255,                       "div": 10,                           "unit": "volts"         }, "name": "Battery auxiliary voltage",         "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "EV9_HVBAT_CHRG_TOT_C", "path": "Battery", "fmt": {"bix": 240, "len": 32, "max": 429496729,                 "div": 10,                           "unit": "ampereHours"   }, "name": "Total charge (current)"},
+    {"id": "EV9_HVBAT_DSCH_TOT_C", "path": "Battery", "fmt": {"bix": 272, "len": 32, "max": 429496729,                 "div": 10,                           "unit": "ampereHours"   }, "name": "Total discharge (current)"},
+    {"id": "EV9_HVBAT_CHRG_TOT_E", "path": "Battery", "fmt": {"bix": 304, "len": 32, "max": 429496729,                 "div": 10,                           "unit": "kilowattHours" }, "name": "Total charge (energy)"},
+    {"id": "EV9_HVBAT_DSCH_TOT_E", "path": "Battery", "fmt": {"bix": 336, "len": 32, "max": 429496729,                 "div": 10,                           "unit": "kilowattHours" }, "name": "Total discharge (energy)"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0102"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
     {"id": "EV9_HVBAT_CMU001_VOLT", "path": "Battery.Modules.001", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 001 voltage"},
     {"id": "EV9_HVBAT_CMU002_VOLT", "path": "Battery.Modules.002", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 002 voltage"},
@@ -96,7 +222,7 @@
     {"id": "EV9_HVBAT_CMU031_VOLT", "path": "Battery.Modules.031", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 031 voltage"},
     {"id": "EV9_HVBAT_CMU032_VOLT", "path": "Battery.Modules.032", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 032 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0103"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0103"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
     {"id": "EV9_HVBAT_CMU033_VOLT", "path": "Battery.Modules.033", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 033 voltage"},
     {"id": "EV9_HVBAT_CMU034_VOLT", "path": "Battery.Modules.034", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 034 voltage"},
@@ -131,7 +257,7 @@
     {"id": "EV9_HVBAT_CMU063_VOLT", "path": "Battery.Modules.063", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 063 voltage"},
     {"id": "EV9_HVBAT_CMU064_VOLT", "path": "Battery.Modules.064", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 064 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0104"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0104"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
     {"id": "EV9_HVBAT_CMU065_VOLT", "path": "Battery.Modules.065", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 065 voltage"},
     {"id": "EV9_HVBAT_CMU066_VOLT", "path": "Battery.Modules.066", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 066 voltage"},
@@ -166,7 +292,7 @@
     {"id": "EV9_HVBAT_CMU095_VOLT", "path": "Battery.Modules.095", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 095 voltage"},
     {"id": "EV9_HVBAT_CMU096_VOLT", "path": "Battery.Modules.096", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 096 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0105"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
     {"id": "EV9_HVBAT_C_DEV_V",    "path": "Battery", "fmt": {"bix": 160, "len": 8,  "max": 5.1,              "div": 50,                               "unit": "volts"   }, "name": "HV cell deviation (voltage)"},
     {"id": "EV9_HVBAT_HTR1_T",     "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 1 temperature"},
@@ -177,7 +303,15 @@
     {"id": "EV9_HVBAT_DET_MIN_ID", "path": "Battery", "fmt": {"bix": 240, "len": 8,  "max": 98,                                        "nullmax": 200, "unit": "scalar"  }, "name": "HV battery min deteriation cell id"},
     {"id": "EV9_HVBAT_SOC_DISP",   "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 100,              "div": 2,                                "unit": "percent" }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "010A"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "dbg": true, "cmd": {"22": "0106"}, "freq": 5,
+  "signals": [
+    {"id": "EV9_BMS_STATE",         "path": "Battery", "fmt": {            "len": 8, "max": 15,                                         "unit": "scalar"  }, "name": "Battery management state"},
+    {"id": "EV9_HVBAT_WCS_INLET_T", "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 127,  "min": -128,            "sign": true, "unit": "celsius" }, "name": "Battery temperature at WCS input"},
+    {"id": "EV9_HVBAT_FAN_DUTY",    "path": "Battery", "fmt": {"bix": 64,  "len": 8, "max": 100,                                        "unit": "percent" }, "name": "Battery fan duty feedback"},
+    {"id": "EV9_AC_COMP_RPM",       "path": "Climate", "fmt": {"bix": 96,  "len": 8, "max": 5100,              "mul": 20,               "unit": "rpm"     }, "name": "Air conditioning compressor speed"},
+    {"id": "EV9_HVBAT_PRA_T",       "path": "Battery", "fmt": {"bix": 160, "len": 8, "max": 254,  "min": -256, "mul": 2,  "sign": true, "unit": "celsius" }, "name": "Battery temperature at the power relay assembly"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "010A"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
     {"id": "EV9_HVBAT_CMU097_VOLT", "path": "Battery.Modules.097", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 097 voltage"},
     {"id": "EV9_HVBAT_CMU098_VOLT", "path": "Battery.Modules.098", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 098 voltage"},
@@ -212,7 +346,7 @@
     {"id": "EV9_HVBAT_CMU127_VOLT", "path": "Battery.Modules.127", "fmt": {"bix": 272, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 127 voltage"},
     {"id": "EV9_HVBAT_CMU128_VOLT", "path": "Battery.Modules.128", "fmt": {"bix": 280, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 128 voltage"}
   ]},
-{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "010B"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2026 },
+{ "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "010B"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
     {"id": "EV9_HVBAT_CMU129_VOLT", "path": "Battery.Modules.129", "fmt": {"bix": 32,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 129 voltage"},
     {"id": "EV9_HVBAT_CMU130_VOLT", "path": "Battery.Modules.130", "fmt": {"bix": 40,  "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 130 voltage"},
@@ -238,6 +372,61 @@
     {"id": "EV9_HVBAT_CMU150_VOLT", "path": "Battery.Modules.150", "fmt": {"bix": 200, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 150 voltage"},
     {"id": "EV9_HVBAT_CMU151_VOLT", "path": "Battery.Modules.151", "fmt": {"bix": 208, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 151 voltage"},
     {"id": "EV9_HVBAT_CMU152_VOLT", "path": "Battery.Modules.152", "fmt": {"bix": 216, "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "HV battery module 152 voltage"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0111"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_NORMAL_CHARGING_COUNT",      "path": "Battery", "fmt": {"bix": 32,  "len": 32, "max": 4294967295,                           "unit": "scalar"        }, "name": "Normal charging, count"},
+    {"id": "EV9_QUICK_CHARGING_COUNT",       "path": "Battery", "fmt": {"bix": 64,  "len": 32, "max": 4294967295,                           "unit": "scalar"        }, "name": "Quick charging, count"},
+    {"id": "EV9_NORMAL_CHARGING_ENERGY_TOT", "path": "Battery", "fmt": {"bix": 96,  "len": 32, "max": 4294967295,                           "unit": "kilowattHours" }, "name": "Normal charging energy, total"},
+    {"id": "EV9_QUICK_CHARGING_ENERGY_TOT",  "path": "Battery", "fmt": {"bix": 128, "len": 32, "max": 4294967295,                           "unit": "kilowattHours" }, "name": "Quick charging energy, total"},
+    {"id": "EV9_BATTERY_PACK_B17",           "path": "Battery", "fmt": {"bix": 208, "len": 8,  "max": 80,         "min": -40, "sign": true, "unit": "celsius"       }, "name": "Battery pack B17"},
+    {"id": "EV9_BATTERY_PACK_B18",           "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 80,         "min": -40, "sign": true, "unit": "celsius"       }, "name": "Battery pack B18"}
+  ]},
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "0114"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_AC_COMPRESSOR_OPERATION_RPM", "path": "Climate", "fmt": {"bix": 208, "len": 16, "max": 1310700, "mul": 20, "unit": "rpm" }, "name": "A/C compressor operation RPM"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_CHARGE_MODE_DC_TARGET_VOLTAGE",           "path": "Battery", "fmt": {"bix": 64,  "len": 16, "max": 6553.5, "div": 10, "unit": "volts" }, "name": "Charge mode DC target voltage"},
+    {"id": "EV9_CHARGE_MODE_DC_MAXIMUM_CURRENT_LIMIT",    "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 6553.5, "div": 10, "unit": "amps"  }, "name": "Charge mode DC maximum current limit"},
+    {"id": "EV9_CHARGE_MODE_AC_MAXIMUM_CURRENT_LIMIT",    "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 6553.5, "div": 10, "unit": "amps"  }, "name": "Charge mode A/C maximum current limit"},
+    {"id": "EV9_DISCHARGE_MODE_V2L_AC_TARGET_VOLTAGE",    "path": "Battery", "fmt": {"bix": 112, "len": 8,  "max": 255,               "unit": "volts" }, "name": "Discharge mode A/C target voltage"},
+    {"id": "EV9_DISCHARGE_MODE_DC_MAXIMUM_CURRENT_LIMIT", "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 255,               "unit": "amps"  }, "name": "Discharge mode DC maximum current limit"},
+    {"id": "EV9_DISCHARGE_MODE_AC_MAXIMUM_CURRENT_LIMIT", "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 255,               "unit": "amps"  }, "name": "Discharge mode A/C maximum current limit"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "E002"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_OBC_AC_VOLTAGE_A_RMS",                         "path": "Battery.Charging", "fmt": {"bix": 32,  "len": 16, "max": 6553.5,                 "div": 10,                                             "unit": "volts"   }, "name": "On-board charger, AC voltage a"},
+    {"id": "EV9_OBC_AC_VOLTAGE_B_RMS",                         "path": "Battery.Charging", "fmt": {"bix": 48,  "len": 16, "max": 6553.5,                 "div": 10,                            "nullmax": 6000, "unit": "volts"   }, "name": "On-board charger, AC voltage b"},
+    {"id": "EV9_OBC_AC_FREQUENCY",                             "path": "Battery.Charging", "fmt": {"bix": 80,  "len": 8,  "max": 255,                                                                           "unit": "hertz"   }, "name": "On-board charger, AC frequency"},
+    {"id": "EV9_OBC_AC_TOTAL_CURRENT_RMS",                     "path": "Battery.Charging", "fmt": {"bix": 88,  "len": 16, "max": 327.67, "min": -327.68, "div": 100,             "sign": true,                  "unit": "amps"    }, "name": "On-board charger, AC total current"},
+    {"id": "EV9_OBC_AC_CURRENT_A_RMS",                         "path": "Battery.Charging", "fmt": {"bix": 104, "len": 16, "max": 327.67, "min": -327.68, "div": 100,             "sign": true,                  "unit": "amps"    }, "name": "On-board charger, AC current a"},
+    {"id": "EV9_OBC_AC_CURRENT_B_RMS",                         "path": "Battery.Charging", "fmt": {"bix": 120, "len": 16, "max": 327.67, "min": -327.68, "div": 100,             "sign": true,                  "unit": "amps"    }, "name": "On-board charger, AC current b"},
+    {"id": "EV9_OBC_DC_VOLTAGE",                               "path": "Battery.Charging", "fmt": {"bix": 152, "len": 16, "max": 6553.5,                 "div": 10,                            "nullmax": 6000, "unit": "volts"   }, "name": "On-board charger, DC voltage"},
+    {"id": "EV9_OBC_DC_CURRENT_TOTAL_RMS",                     "path": "Battery.Charging", "fmt": {"bix": 168, "len": 16, "max": 327.67, "min": -327.68, "div": 100,             "sign": true,                  "unit": "amps"    }, "name": "On-board charger, DC current total"},
+    {"id": "EV9_OBC_DC_CURRENT_A_RMS",                         "path": "Battery.Charging", "fmt": {"bix": 184, "len": 16, "max": 327.67, "min": -327.68, "div": 100,             "sign": true,                  "unit": "amps"    }, "name": "On-board charger, DC current a"},
+    {"id": "EV9_OBC_DC_CURRENT_B_RMS",                         "path": "Battery.Charging", "fmt": {"bix": 200, "len": 16, "max": 327.67, "min": -327.68, "div": 100,             "sign": true,                  "unit": "amps"    }, "name": "On-board charger, DC current b"},
+    {"id": "EV9_OBC_T_A",                                      "path": "Battery.Charging", "fmt": {"bix": 216, "len": 8,  "max": 215,    "min": -40,                 "add": -40,                                "unit": "celsius" }, "name": "On-board charger, temperature a"},
+    {"id": "EV9_OBC_T_B",                                      "path": "Battery.Charging", "fmt": {"bix": 224, "len": 8,  "max": 215,    "min": -40,                 "add": -40,                                "unit": "celsius" }, "name": "On-board charger, temperature b"},
+    {"id": "EV9_OBC_AC_INPUT_CURRENT_SENSOR_A_SIGNAL_VOLTAGE", "path": "Battery.Charging", "fmt": {"bix": 296, "len": 16, "max": 655.35,                 "div": 100,                                            "unit": "volts"   }, "name": "On-board charger, AC input current sensor a signal voltage"},
+    {"id": "EV9_OBC_AC_INPUT_CURRENT_SENSOR_B_SIGNAL_VOLTAGE", "path": "Battery.Charging", "fmt": {"bix": 312, "len": 16, "max": 655.35,                 "div": 100,                                            "unit": "volts"   }, "name": "On-board charger, AC input current sensor b signal voltage"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "E003"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_OBC_CHARGE_MODE_DC_TARGET_VOLTAGE", "path": "Battery.Charging", "fmt": {"bix": 64, "len": 16, "max": 6553.5, "div": 10, "unit": "volts" }, "name": "On-board charger, charge mode DC target voltage"},
+    {"id": "EV9_OBC_CHARGE_MODE_DC_TARGET_CURRENT", "path": "Battery.Charging", "fmt": {"bix": 80, "len": 16, "max": 6553.5, "div": 10, "unit": "amps"  }, "name": "On-board charger, charge mode DC target current"}
+  ]},
+{ "hdr": "7E5", "rax": "7ED", "cmd": {"22": "E101"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2025 },
+  "signals": [
+    {"id": "EV9_LDC_T",                       "path": "Battery", "fmt": {"bix": 72,  "len": 8,  "max": 155,     "min": -100,                         "add": -100, "unit": "celsius" }, "name": "Low-voltage dc-dc converter, temperature"},
+    {"id": "EV9_LDC_OUTPUT_VOLTAGE",          "path": "Battery", "fmt": {"bix": 80,  "len": 16, "max": 65.535,                          "div": 1000,              "unit": "volts"   }, "name": "Low-voltage dc-dc converter, output voltage"},
+    {"id": "EV9_LDC_OUTPUT_CURRENT",          "path": "Battery", "fmt": {"bix": 96,  "len": 16, "max": 655.35,               "mul": 10, "div": 1000,              "unit": "amps"    }, "name": "Low-voltage dc-dc converter, output current"},
+    {"id": "EV9_LDC_INPUT_VOLTAGE",           "path": "Battery", "fmt": {"bix": 112, "len": 16, "max": 6553.5,                          "div": 10,                "unit": "volts"   }, "name": "Low-voltage dc-dc converter, input voltage"},
+    {"id": "EV9_AUX_BATTERY_CURRENT",         "path": "Battery", "fmt": {"bix": 144, "len": 16, "max": 328.35,  "min": -327,            "div": 100,  "add": -327, "unit": "amps"    }, "name": "Auxiliary battery current"},
+    {"id": "EV9_AUX_BATTERY_STATE_OF_CHARGE", "path": "Battery", "fmt": {"bix": 160, "len": 8,  "max": 100,                                                       "unit": "percent" }, "name": "Auxiliary battery state of charge"},
+    {"id": "EV9_AUX_BATTERY_VOLTAGE",         "path": "Battery", "fmt": {"bix": 168, "len": 16, "max": 71.535,  "min": 6,               "div": 1000, "add": 6,    "unit": "volts"   }, "name": "Auxiliary battery voltage",                   "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "EV9_AUX_BATTERY_T",               "path": "Battery", "fmt": {"bix": 184, "len": 16, "max": 32727.5, "min": -40,             "div": 2,    "add": -40,  "unit": "celsius" }, "name": "Auxiliary battery temperature"}
   ]}
 ],
 "signalGroups": [
