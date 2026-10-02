@@ -1,0 +1,62 @@
+command_id: 770.778.22BC04
+test_cases:
+- expected_values:
+    EV9_BELT_RL: 0
+    EV9_BELT_RM: 0
+    EV9_BELT_RR: 1
+    EV9_GEAR_R_2: 0
+    EV9_LOCK_FL: 0
+    EV9_LOCK_FR: 0
+  response: |-
+    778100B62BC04BDFEBF
+    778217800540208AAAA
+- expected_values:
+    EV9_BELT_RL: 0
+    EV9_BELT_RM: 0
+    EV9_BELT_RR: 1
+    EV9_GEAR_R_2: 0
+    EV9_LOCK_FL: 0
+    EV9_LOCK_FR: 0
+  response: |-
+    778100B62BC04BDFEBF
+    778217800560208AAAA
+- expected_values:
+    EV9_BELT_RL: 0
+    EV9_BELT_RM: 0
+    EV9_BELT_RR: 1
+    EV9_GEAR_R_2: 0
+    EV9_LOCK_FL: 0
+    EV9_LOCK_FR: 0
+  response: |-
+    778100B62BC04BDFEBF
+    7782178005C0208AAAA
+- expected_values:
+    EV9_BELT_RL: 0
+    EV9_BELT_RM: 0
+    EV9_BELT_RR: 1
+    EV9_GEAR_R_2: 0
+    EV9_LOCK_FL: 0
+    EV9_LOCK_FR: 0
+  response: |-
+    778100B62BC04BDFEBF
+    7782178005E0208AAAA
+- expected_values:
+    EV9_BELT_RL: 0
+    EV9_BELT_RM: 0
+    EV9_BELT_RR: 1
+    EV9_GEAR_R_2: 0
+    EV9_LOCK_FL: 0
+    EV9_LOCK_FR: 1
+  response: |-
+    778100B62BC04BDFEBF
+    778217804560208AAAA
+- expected_values:
+    EV9_BELT_RL: 0
+    EV9_BELT_RM: 0
+    EV9_BELT_RR: 1
+    EV9_GEAR_R_2: 0
+    EV9_LOCK_FL: 0
+    EV9_LOCK_FR: 0
+  response: |-
+    778100B62BC04BDFEBF
+    7782178205E0208AAAA
