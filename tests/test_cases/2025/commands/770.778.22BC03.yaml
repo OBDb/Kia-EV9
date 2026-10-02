@@ -1,0 +1,12 @@
+command_id: 770.778.22BC03
+test_cases:
+- expected_values:
+    EV9_DOOR_FL: 0
+    EV9_DOOR_FR: 0
+    EV9_DOOR_RL: 1
+    EV9_DOOR_RR: 1
+    EV9_HANDBRAKE: 0
+    EV9_TRUNK: 0
+  response: |-
+    778100862BC03F00000
+    778210007AAAAAAAAAA
