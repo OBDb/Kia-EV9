@@ -1,6 +1,7 @@
 { "ecu": [
     { "hdr": "7A0", "type": "bodyControl" },
     { "hdr": "7C6", "type": "cluster" },
+    { "hdr": "7E3", "type": "motor" },
     { "hdr": "7E4", "type": "battery" }
   ],
   "commands": [
