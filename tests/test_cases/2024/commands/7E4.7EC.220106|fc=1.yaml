@@ -2,7 +2,7 @@ command_id: 7E4.7EC.220106|fc=1
 test_cases:
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 20
     EV9_HVBAT_WCS_INLET_T: 22
