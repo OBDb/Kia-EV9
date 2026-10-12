@@ -2,7 +2,7 @@ command_id: 7E4.7EC.220106|fc=1
 test_cases:
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 32
     EV9_HVBAT_WCS_INLET_T: 31
@@ -15,7 +15,7 @@ test_cases:
     7EC2500000000AAAAAA
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 40
     EV9_HVBAT_WCS_INLET_T: 31
@@ -28,7 +28,7 @@ test_cases:
     7EC2500000000AAAAAA
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 34
     EV9_HVBAT_WCS_INLET_T: 32
@@ -41,7 +41,7 @@ test_cases:
     7EC2500000000AAAAAA
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 30
     EV9_HVBAT_WCS_INLET_T: 32
@@ -54,7 +54,7 @@ test_cases:
     7EC2500000000AAAAAA
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 30
     EV9_HVBAT_WCS_INLET_T: 32
@@ -67,7 +67,7 @@ test_cases:
     7EC2500000000AAAAAA
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 40
     EV9_HVBAT_WCS_INLET_T: 32
@@ -80,7 +80,7 @@ test_cases:
     7EC2500000000AAAAAA
 - expected_values:
     EV9_AC_COMP_RPM: 0
-    EV9_BMS_STATE: 15
+    EV9_BMS_STATE: 20
     EV9_HVBAT_FAN_DUTY: 0
     EV9_HVBAT_PRA_T: 38
     EV9_HVBAT_WCS_INLET_T: 35
