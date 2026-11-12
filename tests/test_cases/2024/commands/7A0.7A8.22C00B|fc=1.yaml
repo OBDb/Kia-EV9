@@ -1,6 +1,42 @@
 command_id: 7A0.7A8.22C00B|fc=1
 test_cases:
 - expected_values:
+    EV9_TP_FL: 36.4
+    EV9_TP_FR: 38
+    EV9_TP_RL: 37.2
+    EV9_TP_RR: 36.4
+    EV9_TT_FL: 10
+    EV9_TT_FR: 11
+    EV9_TT_RL: 11
+    EV9_TT_RR: 11
+  response: "22C00B\n7A8 10 24 62 C0 0B FF FF FF \n7A8 21 F8 B6 3C 00 04 00 BE \n7A8
+    22 3D 00 04 00 BA 3D 00 \n7A8 23 05 00 B6 3D 00 05 00 \n7A8 24 3B 93 B8 93 B8
+    93 B8 \n7A8 25 93 B8 AA AA AA AA AA "
+- expected_values:
+    EV9_TP_FL: 36.4
+    EV9_TP_FR: 38.2
+    EV9_TP_RL: 37.2
+    EV9_TP_RR: 36.4
+    EV9_TT_FL: 10
+    EV9_TT_FR: 11
+    EV9_TT_RL: 11
+    EV9_TT_RR: 11
+  response: "22C00B\n7A8 10 24 62 C0 0B FF FF FF \n7A8 21 F8 B6 3C 00 04 00 BF \n7A8
+    22 3D 00 04 00 BA 3D 00 \n7A8 23 05 00 B6 3D 00 05 00 \n7A8 24 3B 93 B8 93 B8
+    93 B8 \n7A8 25 93 B8 AA AA AA AA AA "
+- expected_values:
+    EV9_TP_FL: 36.8
+    EV9_TP_FR: 38
+    EV9_TP_RL: 37.2
+    EV9_TP_RR: 36.8
+    EV9_TT_FL: 10
+    EV9_TT_FR: 11
+    EV9_TT_RL: 12
+    EV9_TT_RR: 11
+  response: "22C00B\n7A8 10 24 62 C0 0B FF FF FF \n7A8 21 F8 B8 3C 00 05 00 BE \n7A8
+    22 3D 00 04 00 BA 3E 00 \n7A8 23 05 00 B8 3D 00 04 00 \n7A8 24 3B 93 B8 93 B8
+    93 B8 \n7A8 25 93 B8 AA AA AA AA AA "
+- expected_values:
     EV9_TP_FL: null
     EV9_TP_FR: null
     EV9_TP_RL: null
