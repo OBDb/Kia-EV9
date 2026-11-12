@@ -1,6 +1,34 @@
 command_id: 7B3.7BB.220100|fc=1
 test_cases:
 - expected_values:
+    EV9_TEMP_EXT: 7
+    EV9_TEMP_INT: 19
+    EV9_VSS: 16
+  response: "220100\n7BB 10 27 62 01 00 7F 94 07 \n7BB 21 C8 FF 76 5E 5C 00 EF \n7BB
+    22 8D 00 EF FF FF 10 FF \n7BB 23 B3 FF FF FF FF FF FF \n7BB 24 FF 33 85 81 90
+    10 FF \n7BB 25 FF 00 FF FF FF AA AA "
+- expected_values:
+    EV9_TEMP_EXT: 7
+    EV9_TEMP_INT: 19.5
+    EV9_VSS: 28
+  response: "220100\n7BB 10 27 62 01 00 7F 94 07 \n7BB 21 C8 FF 77 5E 5D 00 EF \n7BB
+    22 8D 00 EF FF FF 10 FF \n7BB 23 B3 FF FF FF FF FF FF \n7BB 24 FF 33 85 83 93
+    1C FF \n7BB 25 FF 00 FF FF FF AA AA "
+- expected_values:
+    EV9_TEMP_EXT: 7
+    EV9_TEMP_INT: 19.5
+    EV9_VSS: 19
+  response: "220100\n7BB 10 27 62 01 00 7F 94 07 \n7BB 21 C8 FF 77 5E 5D 00 EF \n7BB
+    22 8D 00 EF FF FF 10 FF \n7BB 23 B3 FF FF FF FF FF FF \n7BB 24 FF 33 85 84 92
+    13 FF \n7BB 25 FF 00 FF FF FF AA AA "
+- expected_values:
+    EV9_TEMP_EXT: 7.5
+    EV9_TEMP_INT: 20
+    EV9_VSS: 0
+  response: "220100\n7BB 10 27 62 01 00 7F 94 07 \n7BB 21 C8 FF 78 5F 5D 00 EF \n7BB
+    22 8D 00 EF FF FF 10 FF \n7BB 23 B3 FF FF FF FF FF FF \n7BB 24 FF 33 85 84 90
+    00 FF \n7BB 25 FF 00 FF FF FF AA AA "
+- expected_values:
     EV9_TEMP_EXT: 13
     EV9_TEMP_INT: 19
     EV9_VSS: 32

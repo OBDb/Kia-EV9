@@ -1,6 +1,18 @@
 command_id: 7C6.7CE.22B002|fc=1
 test_cases:
 - expected_values:
+    EV9_ODO_MI: 11042
+  response: "22B002\n7CE 10 18 62 B0 02 DC 00 00 \n7CE 21 00 FF B5 00 00 00 00 \n7CE
+    22 2B 22 00 81 B7 00 00 \n7CE 23 00 00 00 00 AA AA AA "
+- expected_values:
+    EV9_ODO_MI: 11042
+  response: "22B002\n7CE 10 18 62 B0 02 DC 00 00 \n7CE 21 00 FF B5 00 00 00 00 \n7CE
+    22 2B 22 00 B7 B7 00 00 \n7CE 23 00 00 00 00 AA AA AA "
+- expected_values:
+    EV9_ODO_MI: 11042
+  response: "22B002\n7CE 10 18 62 B0 02 DC 00 00 \n7CE 21 00 FF B5 00 00 00 00 \n7CE
+    22 2B 22 00 D2 B7 00 00 \n7CE 23 00 00 00 00 AA AA AA "
+- expected_values:
     EV9_ODO_MI: 10449
   response: |-
     22B002
