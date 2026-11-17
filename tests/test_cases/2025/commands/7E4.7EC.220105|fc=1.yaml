@@ -2,7 +2,7 @@ command_id: 7E4.7EC.220105|fc=1
 test_cases:
 - expected_values:
     EV9_HVBAT_C_DEV_V: 0
-    EV9_HVBAT_DET_MAX_ID: 98
+    EV9_HVBAT_DET_MAX_ID: 132
     EV9_HVBAT_DET_MIN: 100
     EV9_HVBAT_DET_MIN_ID: 0
     EV9_HVBAT_HTR1_T: 6
@@ -257,7 +257,7 @@ test_cases:
     7EC260021212120AAAA
 - expected_values:
     EV9_HVBAT_C_DEV_V: 0
-    EV9_HVBAT_DET_MAX_ID: 98
+    EV9_HVBAT_DET_MAX_ID: 132
     EV9_HVBAT_DET_MIN: 100
     EV9_HVBAT_DET_MIN_ID: 0
     EV9_HVBAT_HTR1_T: 6
