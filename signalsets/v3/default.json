@@ -145,9 +145,9 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E004"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
-    {"id": "EV9_ACCELERATOR_PEDAL_POSITION", "path": "Control",  "fmt": {"bix": 64, "len": 16, "blsb": true, "max": 100,                             "div": 512,                 "unit": "percent"           }, "name": "Accelerator pedal position"},
-    {"id": "EV9_VSS_HD",                     "path": "Movement", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 511, "min": -512, "mul": 156.25, "div": 10000, "sign": true, "unit": "kilometersPerHour" }, "name": "Vehicle speed, high resolution", "suggestedMetric": "speed"},
-    {"id": "EV9_12V_V",                      "path": "Battery",  "fmt": {"bix": 96, "len": 16, "blsb": true, "max": 32,               "mul": 4.883,  "div": 10000,               "unit": "volts"             }, "name": "Auxiliary battery voltage",      "suggestedMetric": "starterBatteryVoltage"}
+    {"id": "EV9_ACCELERATOR_PEDAL_POSITION", "path": "Control",  "fmt": {"bix": 64, "len": 16, "blsb": true, "max": 100,                             "div": 512,                               "unit": "percent"           }, "name": "Accelerator pedal position"},
+    {"id": "EV9_VSS_HD",                     "path": "Movement", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 511, "min": -512, "mul": 156.25, "div": 10000, "sign": true,               "unit": "kilometersPerHour" }, "name": "Vehicle speed, high resolution", "suggestedMetric": "speed"},
+    {"id": "EV9_12V_V",                      "path": "Battery",  "fmt": {"bix": 96, "len": 16, "blsb": true, "max": 32,               "mul": 4.883,  "div": 10000,               "nullmin": 0, "unit": "volts"             }, "name": "Auxiliary battery voltage",      "suggestedMetric": "starterBatteryVoltage"}
   ]},
 { "hdr": "7E2", "rax": "7EA", "cmd": {"22": "E005"}, "freq": 1, "dbgfilter": { "to": 2023, "from": 2027 },
   "signals": [
@@ -308,9 +308,9 @@
     {"id": "EV9_HVBAT_HTR1_T",     "path": "Battery", "fmt": {"bix": 184, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 1 temperature"},
     {"id": "EV9_HVBAT_HTR2_T",     "path": "Battery", "fmt": {"bix": 192, "len": 8,  "max": 127, "min": -127,            "sign": true,                 "unit": "celsius" }, "name": "HV battery heater 2 temperature"},
     {"id": "EV9_HVBAT_SOH",        "path": "Battery", "fmt": {"bix": 200, "len": 16, "max": 100,              "div": 10,                               "unit": "percent" }, "name": "HV battery state of health",         "suggestedMetric": "stateOfHealth"},
-    {"id": "EV9_HVBAT_DET_MAX_ID", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 98,                                        "nullmax": 200, "unit": "scalar"  }, "name": "HV battery max deteriation cell id"},
+    {"id": "EV9_HVBAT_DET_MAX_ID", "path": "Battery", "fmt": {"bix": 216, "len": 8,  "max": 200,                                       "nullmax": 200, "unit": "scalar"  }, "name": "HV battery max deteriation cell id"},
     {"id": "EV9_HVBAT_DET_MIN",    "path": "Battery", "fmt": {"bix": 224, "len": 16, "max": 100,              "div": 10,                               "unit": "percent" }, "name": "HV battery min deteriation"},
-    {"id": "EV9_HVBAT_DET_MIN_ID", "path": "Battery", "fmt": {"bix": 240, "len": 8,  "max": 98,                                        "nullmax": 200, "unit": "scalar"  }, "name": "HV battery min deteriation cell id"},
+    {"id": "EV9_HVBAT_DET_MIN_ID", "path": "Battery", "fmt": {"bix": 240, "len": 8,  "max": 200,                                       "nullmax": 200, "unit": "scalar"  }, "name": "HV battery min deteriation cell id"},
     {"id": "EV9_HVBAT_SOC_DISP",   "path": "Battery", "fmt": {"bix": 248, "len": 8,  "max": 100,              "div": 2,                                "unit": "percent" }, "name": "HV battery charge",                  "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "fcm1": true, "cmd": {"22": "0106"}, "freq": 5, "dbgfilter": { "to": 2023, "from": 2027 },
